@@ -6,8 +6,8 @@
 unsigned int id = 0;
 
 class Sortie : public Acces {
-public :
-private : 
+private :
+public : 
     virtual ~Sortie() = 0;
     void lecture_ticket(int i);
 };
