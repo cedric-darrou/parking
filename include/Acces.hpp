@@ -11,6 +11,7 @@ private:
     std::string nom;
     std::string adresse;
 public:
+    Acces();
     Acces(std::string n, std::string a) : 
     nom(n), adresse(a){
         id_acces = id++;
