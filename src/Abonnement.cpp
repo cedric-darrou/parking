@@ -4,11 +4,11 @@
 
 using namespace std;
 
-    Abonnement::Abonnement();
+    //Abonnement::Abonnement();
     
-    string Abonnement::getNom( return nom_);
-    string Abonnement::getPrenom(){return prenom_}
-    double Abonnement::getSolde() { return solde_}
+    string Abonnement::getNom() {return (nom_);};
+    string Abonnement::getPrenom(){return (prenom_);}
+    double Abonnement::getSolde() { return (solde_);}
 
     void Abonnement::setNom(std::string nom){
         nom_ = nom;

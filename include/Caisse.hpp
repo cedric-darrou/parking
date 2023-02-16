@@ -1,15 +1,15 @@
+#include "libs.hpp"
+
 #ifndef CAISSE_H
 #define CAISSE_H
-#include<string>
 
 
-class Caisse
-{
+class Caisse {
 private:
     int contenu_;
     int etage_;
-    std::string lieu;
-    float operation[];
+    std::string lieu_;
+    float operation_[];
     
 public:
     Caisse();
@@ -20,15 +20,16 @@ public:
     std::string imprimer_recu();
     double compatibilite();
 
-    //getter
+    //Getter
     int get_contenu();
-    std::string lieu();
+    std::string get_lieu();
 
-    //setters
+    /*
+    //Setters
     void setContenu(int contenu);
     void setEtage(int etage);
     std::string setLieu(std::string lieu);
-    
+    */
 
     ~Caisse();
 };

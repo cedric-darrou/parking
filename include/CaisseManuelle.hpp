@@ -1,9 +1,10 @@
-#ifndef CAISSE_H
-#define CAISSE_H
-#include<string>
+#include "libs.hpp"
+#include "Caisse.hpp"
 
-class CaisseManuelle
-{
+#ifndef CAISSEMANUELLE_H
+#define CAISSEMANUELLE_H
+
+class CaisseManuelle : public Caisse {
 private:
     bool presence_surveillant_;
 public:

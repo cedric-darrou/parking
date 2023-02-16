@@ -1,8 +1,6 @@
 #include "Parking.hpp"
 #include "libs.hpp"
 
-//Comment
-
 #ifndef ACCES.H
 #define ACCES.H
 

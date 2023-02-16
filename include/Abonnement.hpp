@@ -1,16 +1,17 @@
+#include "libs.hpp"
+
 #ifndef CAISSE_H
 #define CAISSE_H
-#include<string>
 
-class Abonnement
-{
+class Abonnement{
 private:
     std::string nom_;
     std:: string prenom_;
     double solde_;
     
 public:
-    Abonnement();
+    Abonnement() = default;
+    
     
     std::string getNom();
     std::string getPrenom();
@@ -20,6 +21,5 @@ public:
     void setPrenom(std:: string prenom);
     void setSolde(double solde);
 };
-
 
 #endif
