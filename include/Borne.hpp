@@ -1,6 +1,7 @@
 #include "Voie.hpp"
 #include "CarteBanquaire.hpp"
 #include "Abonnement.hpp"
+#include "GestionDebit.hpp"
 #include "libs.hpp"
 
 #ifndef BORNE.H
@@ -8,7 +9,7 @@
 
 unsigned int id = 0;
 
-class Borne : public Voie {
+class Borne : public Voie, public GestionDebit {
 private:
     unsigned int id_voie_;
     bool operationnel_;
