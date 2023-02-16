@@ -11,9 +11,9 @@ public:
     std::string lire_carte_bleu();
     bool débiter_cb();
     std::string ticket_perdu();
-    bool verifier_carte_non_volée();
+    bool verifier_carte_non_volee();
 
-    int getNumCarteVolé();
+    int getNumCarteVole();
     //void setNumCarteVolé(int num_carte_volé);
 
    

@@ -2,13 +2,13 @@
 #define CAISSE_H
 #include<string>
 
-class GestionEntré
+class GestionEntree
 {
 private:
     int id_;
-    double durée_stationment;
+    double duree_stationment;
 public:
-    GestionEntré();
+    GestionEntree();
     
     int getId();
     void setId(int id);

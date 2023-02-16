@@ -18,7 +18,7 @@ public:
     double afficher_montant();
     std::string imprimer_ticket_sortie();
     std::string imprimer_recu();
-    double compatibilité();
+    double compatibilite();
 
     //getter
     int get_contenu();

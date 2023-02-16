@@ -1,12 +1,12 @@
-#include "TciketMagnétique.hpp"
+#include "TicketMagnetique.hpp"
 #include<iostream>
 
 using namespace std;
 
-    TciketMagnétique::TciketMagnétique();
-    void TciketMagnétique::alerte();
+    TicketMagnetique::TicketMagnetique();
+    void TicketMagnetique::alerte();
 
-    std::string TciketMagnétique::getDateEntrée() { return date_entrée_}
-    void TciketMagnétique::setDateEntréé(std::string date_entré){
-        date_entrée_ = date_entré;
+    std::string TicketMagnetique::getDateEntree() { return date_entree_}
+    void TicketMagnetique::setDateEntréé(std::string date_entree){
+        date_entree_ = date_entree;
     }
