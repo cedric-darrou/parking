@@ -1,5 +1,7 @@
-#include <Entree.hpp>
-#include <Sortie.hpp>
+#include "Entree.hpp"
+#include "Sortie.hpp"
+
+#include "libs.hpp"
 
 #ifndef VOIE.H
 #define VOIE.H
@@ -8,11 +10,11 @@ unsigned int id = 0;
 
 class Voie : public Entree, public Sortie{
 private:
-    unsigned int id_voie;
-    bool ouvert;
+    unsigned int id_voie_;
+    bool ouvert_;
 public:
-    Voie() : ouvert(true) {
-        id_voie = id++;
+    Voie() : ouvert_(true) {
+        id_voie_ = id++;
     };
     virtual ~Voie();
 

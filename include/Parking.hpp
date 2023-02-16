@@ -1,4 +1,4 @@
-#include <lib.hpp>
+#include "libs.hpp"
 
 #ifndef PARKING.H
 #define PARKING.H
@@ -7,15 +7,15 @@ unsigned int id = 0;
 
 class Parking{
 private:
-    unsigned int id_parking;
-    std::string nom;
-    std::string localisation;
-    size_t nb_places_occupees;
+    unsigned int id_parking_;
+    std::string nom_;
+    std::string localisation_;
+    size_t nb_places_occupees_;
 public:
     Parking();
     Parking(std::string n, std::string l, size_t nb) : 
-    nom(n), localisation(l), nb_places_occupees(nb){
-        id_parking = id++;
+    nom_(n), localisation_(l), nb_places_occupees_(nb){
+        id_parking_ = id++;
     };
     virtual ~Parking();
 

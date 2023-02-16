@@ -1,6 +1,7 @@
-#include <Voie.hpp>
-#include <CarteBanquaire.hpp>
-#include <Abonnement.hpp>
+#include "Voie.hpp"
+#include "CarteBanquaire.hpp"
+#include "Abonnement.hpp"
+#include "libs.hpp"
 
 #ifndef BORNE.H
 #define BORNE.H
@@ -9,11 +10,11 @@ unsigned int id = 0;
 
 class Borne : public Voie {
 private:
-    unsigned int id_voie;
-    bool operationnel;
+    unsigned int id_voie_;
+    bool operationnel_;
 public:
-    Borne() : operationnel(true){
-        id_voie = id++;
+    Borne() : operationnel_(true){
+        id_voie_ = id++;
     };
     ~Borne();
 
