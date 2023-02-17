@@ -1,13 +1,25 @@
-#include "GestionDebit.h"
-#include<iostream>
+#include "../include/GestionDebit.hpp"
 
 using namespace std;
 
-Gestion_Debit();
-    std::string Gestion_Debit::lire_carte_bleu();
-    bool GestionDebit::débiter_cb();
-    std::string Gestion_Debit::ticket_perdu();
-    bool GestionDebit::verifier_carte_non_volée();
+GestionDebit::GestionDebit(){}
 
-    int GestionDebit::getNumCarteVolé() {return num_carte_volé}
-    
+string GestionDebit::lire_carte_bleu(){
+    return "lecture carte";
+}
+
+bool GestionDebit::debiter_cb(){
+    return (true);
+}
+
+string GestionDebit::ticket_perdu(){
+    return ("ticket perdu");
+}
+
+bool GestionDebit::verifier_carte_non_volee(){
+    return (true);
+}
+
+int GestionDebit::getNumCarteVolee(int i){
+    return (num_carte_volee_[i]);
+    }

@@ -1,6 +1,7 @@
+#include "libs.hpp"
+
 #ifndef CAISSE_H
 #define CAISSE_H
-#include<string>
 
 
 
@@ -13,7 +14,7 @@ public:
     void alerte();
 
     std::string getDateEntree();
-    void setDateEntréé(std::string date_entree);
+    void setDateEntree(std::string date_entree);
 
     ~TicketMagnetique();
 };

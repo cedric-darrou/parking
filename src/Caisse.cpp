@@ -7,25 +7,26 @@ Caisse::Caisse(){
 }
 
 string Caisse::lire_ticket(){
-
+    return ("Lire ticket");
 }
 
 double Caisse::calculer_mintant(){
-
+    return (2.28);
 }
 double Caisse::afficher_montant(){
-
+    return (1.25);
 }
-string Caisse::imprimer_ticket_sortie(){
 
+string Caisse::imprimer_ticket_sortie(){
+    return ("print ticket");
 }
 
 string Caisse::imprimer_recu(){
-
+    return ("imprimer recu");
 }
 
 double Caisse::compatibilite(){
-
+    return (2.95);
 }
 
 //Getter

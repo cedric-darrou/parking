@@ -1,15 +1,18 @@
-#include "CaisseAutomatique.h"
+#include "../include/CaisseAutomatique.hpp"
 #include<iostream>
 using namespace std;
 
 
 
-    CaisseAutomatique::CaisseAutomatique();
-    double CaisseAutomatique::rendu_monnaie();
-    std::string CaisseAutomatique::CaisseAutomatique::demande_recu();
+    CaisseAutomatique::CaisseAutomatique(){}
+    double CaisseAutomatique::rendu_monnaie(){
+        return 1.98;
+    }
+    std::string CaisseAutomatique::demande_recu(){
+        return "Rendu";
+    }
 
     
-    int CaisseAutomatique::CaisseAutomatique::getId();
-    void CaisseAutomatique::CaisseAutomatique::setId(int id){
-        id_=id;
+    int CaisseAutomatique::getId() {
+        return id_;
     }

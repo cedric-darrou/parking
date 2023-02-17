@@ -9,7 +9,7 @@ private:
     int contenu_;
     int etage_;
     std::string lieu_;
-    float operation_[];
+    std::vector<float> operation_;
     
 public:
     Caisse();
