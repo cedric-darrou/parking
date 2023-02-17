@@ -1,7 +1,7 @@
-#include "libs.hpp"
+#include "../libs.hpp"
 
-#ifndef CAISSE_H
-#define CAISSE_H
+#ifndef GESTIONENTREE_H
+#define GESTIONENTREE_H
 
 class GestionEntree{
 private:
@@ -9,10 +9,11 @@ private:
     double duree_stationment_;
 public:
     GestionEntree();
+    virtual ~GestionEntree();
+
+    //Getter
     int getId();
     double get_duree_stationnement();
 };
-
-
 
 #endif

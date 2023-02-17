@@ -1,8 +1,8 @@
+#include "../libs.hpp"
 #include "Voie.hpp"
-#include "CarteBancaire.hpp"
-#include "Abonnement.hpp"
-#include "GestionDebit.hpp"
-#include "libs.hpp"
+#include "../caisse/CarteBancaire.hpp"
+#include "../caisse/Abonnement.hpp"
+#include "../caisse/GestionDebit.hpp"
 
 //Comment
 

@@ -1,14 +1,16 @@
-#include "libs.hpp"
+#include "../libs.hpp"
+#include "Caisse.hpp"
 
-#ifndef CAISSE_H
-#define CAISSE_H
+#ifndef CAISSEAUTO_H
+#define CAISSEAUTO_H
 
 
-class CaisseAutomatique{
+class CaisseAutomatique : public Caisse{
 private:
     int id_;
 public:
     CaisseAutomatique();
+    virtual ~CaisseAutomatique();
 
     //Getter
     int getId();
@@ -17,7 +19,5 @@ public:
     double rendu_monnaie();
     std::string demande_recu();
 };
-
-
 
 #endif

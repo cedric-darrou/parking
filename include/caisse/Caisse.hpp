@@ -1,10 +1,10 @@
-#include "libs.hpp"
+#include "../libs.hpp"
 
 #ifndef CAISSE_H
 #define CAISSE_H
 
 
-class Caisse {
+class Caisse{
 private:
     int contenu_;
     int etage_;
@@ -13,6 +13,9 @@ private:
     
 public:
     Caisse();
+    virtual ~Caisse();
+
+    //Methods
     std::string lire_ticket();
     double calculer_mintant();
     double afficher_montant();
@@ -23,15 +26,6 @@ public:
     //Getter
     int get_contenu();
     std::string get_lieu();
-
-    /*
-    //Setters
-    void setContenu(int contenu);
-    void setEtage(int etage);
-    std::string setLieu(std::string lieu);
-    */
-
-    ~Caisse();
 };
 
 

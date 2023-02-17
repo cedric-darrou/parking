@@ -1,11 +1,11 @@
+#include "../libs.hpp"
+#include "GestionEntree.hpp"
+
 #ifndef CAISSE_H
 #define CAISSE_H
-#include<string>
-#include<string>
 
 
-class CarteBancaire
-{
+class CarteBancaire {
 private:
     int nom_carte_;
     int cryptogram_;
